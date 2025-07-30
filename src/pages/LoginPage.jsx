@@ -49,7 +49,7 @@ function LoginPage() {
           </Card.Body>
         </Card>
         <div className="w-100 text-center mt-2">
-          Need an account? <Link to="/register">Register</Link>
+          Don't have an account? <Link to="/register">Register</Link>
         </div>
       </div>
     </Container>
