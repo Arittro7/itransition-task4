@@ -30,7 +30,8 @@ function Toolbar({ selectedUsers, onSuccess, onSelfAction }) {
   };
 
   const handleDelete = async () => {
-    if (window.confirm('Are you sure you want to delete the selected users?')) {
+    // if (window.confirm('Are you sure you want to delete the selected users?')) //`Window Alert as not recommended 
+      {
         try {
             const response = await api.delete('/users', { data: { userIds: selectedUsers } });
             onSuccess(response.data.message);
